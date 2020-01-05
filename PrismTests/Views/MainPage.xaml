@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PrismTests.Views.MainPage">
+    <StackLayout Orientation="Vertical" Margin="10,60,10,0">
+        <!-- Place new controls here -->
+        <Label Text="{Binding Title}" HorizontalOptions="Center" VerticalOptions="Start" />
+        <Entry x:Name="FirstName" Text="{Binding AppUser.FirstName}" Placeholder="First Name" />
+        <Entry x:Name="LastName" Text="{Binding AppUser.LastName}" Placeholder="Last Name" />
+        <Entry x:Name="Email" Text="{Binding AppUser.Email}" Placeholder="Email" />
+        <Switch IsToggled="{Binding AppUser.AcceptsTermsAndConditions}" />
+        <Entry x:Name="Password" Placeholder="Password" />
+
+    </StackLayout>
+</ContentPage>
