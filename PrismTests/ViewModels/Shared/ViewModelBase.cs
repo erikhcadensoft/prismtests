@@ -9,6 +9,7 @@ using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
+using PrismTests.Helpers;
 using PrismTests.Interfaces;
 using PrismTests.Resources;
 
@@ -248,6 +249,7 @@ namespace PrismTests.ViewModels
             }
             catch (Exception ex)
             {
+                Logger.LogError(ex);
             }
             finally
             {
@@ -256,6 +258,7 @@ namespace PrismTests.ViewModels
 
         protected void LogError(Exception ex)
         {
+            Logger.LogError(ex);
         }
 
         protected void TrackEvent()
