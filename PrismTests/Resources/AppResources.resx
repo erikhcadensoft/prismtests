@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    
+    <!-- Global Resources -->
+    <data name="LoadingText" xml:space="preserve">
+    <value>Loading...</value>
+    <comment>The loading text</comment>
+    </data>
+    <data name="Global_RequiredHelper" xml:space="preserve">
+    <value>* Required</value>
+    <comment>Input required helper</comment>
+    </data>
+    
+    <data name="Global_Button_Close" xml:space="preserve">
+    <value>CLOSE</value>
+    <comment>Label for close button</comment>
+    </data>
+    <data name="Global_Button_Back" xml:space="preserve">
+    <value>BACK</value>
+    <comment>Label for BACK button</comment>
+    </data>
+    <data name="Global_Button_Cancel" xml:space="preserve">
+    <value>CANCEL</value>
+    <comment>Label for CANCEL button</comment>
+    </data>
+    <data name="Global_Button_Submit" xml:space="preserve">
+    <value>SUBMIT</value>
+    <comment>Label for SUBMIT button</comment>
+    </data>
+    
+    <!-- User Account Pages -->
+    <data name="UserAccount_PageTitle" xml:space="preserve">
+    <value>User Account</value>
+    <comment>The title of the User Account Page</comment>
+    </data>
+    <data name="UserAccounts_PageTitle" xml:space="preserve">
+    <value>All Users</value>
+    <comment>The title of the User Accounts List View Page</comment>
+    </data>
+    <data name="CreateUserAccount_PageTitle" xml:space="preserve">
+    <value>Create New User Account</value>
+    <comment>The title of the Create Account Page</comment>
+    </data>
+    
+</root>

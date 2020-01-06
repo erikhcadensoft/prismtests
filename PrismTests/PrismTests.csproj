@@ -32,5 +32,18 @@
     <Folder Include="Dtos\" />
     <Folder Include="Repositories\" />
     <Folder Include="Services\" />
+    <Folder Include="Views\UserAccounts\" />
+    <Folder Include="ViewModels\UserAccounts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
