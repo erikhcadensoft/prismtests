@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Moq;
@@ -56,9 +57,9 @@ namespace PrismTests.Tests.Repositories
         [Test]
         public async Task GetUserReturnsUserByIdFromService()
         {
+            var repo = ResolveType<AppUserRepository>();
             Guid userId = new Guid("84291c0e-4b8d-42f5-8a19-b48ceb4d9a34");
 
-            var repo = ResolveType<AppUserRepository>();
             var user = await repo.GetUser(userId);
             Assert.NotNull(user);
             Assert.AreEqual(userId, user.Id);
@@ -80,7 +81,12 @@ namespace PrismTests.Tests.Repositories
 
             Assert.NotNull(newUser);
             Assert.AreNotEqual(Guid.Empty, newUser.Id);
-            Assert.That(allUsers.Any(a => a.Id == newUser.Id));
+            Assert.That(allUsers.Count(a => a.Id == newUser.Id), Is.EqualTo(1));
+
+            // List Comparison operations
+            // AppUser[] expectedUsers = new AppUser[6];
+            // CollectionAssert.AreEquivalent(expectedUsers, allUsers);
+            // Assert.That(allUsers, Is.SupersetOf(expectedUsers));
         }
     }
 }
