@@ -28,7 +28,7 @@ namespace PrismTests.ViewModels
         #endregion
 
         public UserAccountsPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService,
-                                 IDeviceService deviceService, IViewModelManager viewModelManager)
+                                         IDeviceService deviceService, IViewModelManager viewModelManager)
             : base(navigationService, pageDialogService, deviceService, viewModelManager)
         {
             try
@@ -69,11 +69,12 @@ namespace PrismTests.ViewModels
             }
         }
 
-        public override async void OnNavigatedTo(INavigationParameters parameters)
+        public override async Task OnNavigatedToAsync(INavigationParameters parameters)
         {
             try
             {
                 _cts = CancellationTokenHelper.SetupCancellationToken(_cts);
+                await Task.Delay(1000);
 
                 switch (parameters.GetNavigationMode())
                 {

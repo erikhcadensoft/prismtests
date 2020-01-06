@@ -17,6 +17,7 @@ namespace PrismTests.ViewModels
 {
     public class ViewModelBase : BindableBase, IActiveAware, INavigationAware, IDestructible, IConfirmNavigation, IConfirmNavigationAsync, IApplicationLifecycleAware, IPageLifecycleAware, INotifyPropertyChanged
     {
+        //INavigatedAwareAsync
         #region Commands
 
         private DelegateCommand<string> _navigateCommand;
@@ -147,12 +148,17 @@ namespace PrismTests.ViewModels
         public void OnNavigatingTo(INavigationParameters parameters)
         {
         }
-        public virtual void OnNavigatedTo(INavigationParameters parameters)
+        public virtual async void OnNavigatedTo(INavigationParameters parameters)
         {
         }
 
-        public virtual void OnNavigatedFrom(INavigationParameters parameters)
+        public virtual async void OnNavigatedFrom(INavigationParameters parameters)
         {
+        }
+
+        public virtual Task OnNavigatedToAsync(INavigationParameters parameters)
+        {
+            return Task.CompletedTask;
         }
 
         #endregion INavigationAware

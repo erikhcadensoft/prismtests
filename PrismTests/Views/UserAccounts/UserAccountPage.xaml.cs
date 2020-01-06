@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using PrismTests.Helpers;
 using Xamarin.Forms;
 
 namespace PrismTests.Views

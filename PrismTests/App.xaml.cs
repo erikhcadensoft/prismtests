@@ -3,6 +3,7 @@ using Prism.Ioc;
 using Prism.Unity;
 using PrismTests.Interfaces;
 using PrismTests.Models;
+using PrismTests.Resources;
 using PrismTests.Services;
 using PrismTests.ViewModels;
 using PrismTests.Views;

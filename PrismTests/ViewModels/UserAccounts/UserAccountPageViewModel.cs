@@ -28,7 +28,7 @@ namespace PrismTests.ViewModels
         #endregion
 
         public UserAccountPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService,
-                                 IDeviceService deviceService, IViewModelManager viewModelManager)
+                                        IDeviceService deviceService, IViewModelManager viewModelManager)
             : base(navigationService, pageDialogService, deviceService, viewModelManager)
         {
             try

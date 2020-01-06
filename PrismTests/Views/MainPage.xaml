@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrismTests.Views.MainPage">
+
     <StackLayout Orientation="Vertical" Margin="10,60,10,0">
         <!-- Place new controls here -->
         <Label Text="{Binding Title}" HorizontalOptions="Center" VerticalOptions="Start" />
@@ -14,5 +15,7 @@
         <Switch IsToggled="{Binding AppUser.AcceptsTermsAndConditions}" />
         <Entry x:Name="Password" Placeholder="Password" />
 
+        <!-- Back To Login Button -->
+        <Button x:Name="ContinueButton" Text="Submit" Command="{Binding NavigateCommand}" CommandParameter="UserAccountsPage" />
     </StackLayout>
 </ContentPage>
